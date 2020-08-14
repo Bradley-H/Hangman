@@ -1,0 +1,16 @@
+.word {
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 55%;
+
+  .letter {
+    border-bottom: 3px solid rgb(215, 221, 252);
+    display: inline-flex;
+    font-size: 40px;
+    letter-spacing: 5px;
+    @include center;
+    margin: 0 3px;
+    width: 3rem;
+  }
+}

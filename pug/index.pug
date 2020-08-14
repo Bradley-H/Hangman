@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Hangman
+    link(rel="stylesheet", href="style.css")
+  body
+    h3 Hangman
+    p Guess the Word
+
+    .game-container
+      svg.figure-container(height="250" width="200")
+        //- ROD -//
+        line(x1="60" y1="20" x2="140" y2="20")
+        line(x1="140" y1="20" x2="140" y2="50")
+        line(x1="60" y1="20" x2="60" y2="230")
+        line(x1="5" y1="230" x2="120" y2="230")
+        //- HEAD -//
+        circle.figure-part(cx="140" cy="70" r="20")
+        //- BODY -//
+        line.figure-part(x1="140" y1="90" x2="140" y2="140")
+        //- ARM LEFT -//
+        line.figure-part(x1="140" y1="120" x2="120" y2="100")
+        //- ARM RIGHT -//
+        line.figure-part(x1="140" y1="120" x2="160" y2="100")
+        //- LEG LEFT -//
+        line.figure-part(x1="140" y1="140" x2="120" y2="180")
+        //- LEG RIGHT -//
+        line.figure-part(x1="140" y1="140" x2="150" y2="180")
+
+    //- WRONG-LETTERS -//
+    .wrong-letters-container
+      .wrong-letters
+        h5 Wrong
+
+    //- THE WORD -//
+    .word#word
+
+    //- FINAL MESSAGE -//
+    .popup-container#popup-container
+      .popup
+        h2#final-message You've Won
+        button#play-again Play Again
+
+
+    //- NOTIFICATION -//
+    .notification-container#notification-container
+      p You've used that letter already
+
+    //- SCRIPT
+    script(src="app.js")

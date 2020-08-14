@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include center;
+  flex-direction: column;
+  background-color: #2a1b3d;
+  font-family: $font-family-primary;
+  width: $body-width;
+  height: $body-height;
+  overflow: hidden;
+  color: $primary-text;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 15px 0 0;
+  color: $primary-text;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 17px;
+  margin-top: 1rem;
+  font-size: 17px;
+  border-radius: 8px;
+  outline: none;
+}

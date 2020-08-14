@@ -1,0 +1,25 @@
+.figure-container {
+  @include mobile {
+    fill: transparent;
+    stroke: $primary-text;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    position: relative;
+    top: 2rem;
+    right: -20%;
+  }
+
+  @include tablet {
+    right: 10rem;
+    top: unset;
+  }
+
+  @include desktop {
+    right: 18rem;
+    top: 5rem;
+  }
+
+  .figure-part {
+    display: none;
+  }
+}
